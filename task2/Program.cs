@@ -17,7 +17,7 @@ int InputNumber(string str)
   return number;
 }
 
-int[] IntToArray(int num, int arrayLenght)
+int[] IntToArray(int num, int arrayLenght)  // Преобразуем число в массив
 {
   int[] array = new int[arrayLenght];
   int counter = arrayLenght - 1;
@@ -30,7 +30,7 @@ int[] IntToArray(int num, int arrayLenght)
   return array;
 }
 
-int SumArray(int[] array)
+int SumArray(int[] array)                   // Находим сумму элементов массива
 {
   int result = 0;
   for(int i = 0; i < array.Length; i++)
@@ -40,7 +40,7 @@ int SumArray(int[] array)
   return result;
 }
 
-int NumberInDigit(int num)
+int NumberInDigit(int num)                  // Узнаем колличество цифр в числе
 {
   int counter = 1;
   while(num>0)
